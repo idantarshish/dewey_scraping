@@ -150,8 +150,7 @@ def scrape_to_file(root, path):
         writer.writerows(books)
 
 def main():
-    ### MISSING: 15, 20-39, 42
-    for i in range(20, 30):
+    for i in range(0, 99):
         try:
             scrape_to_file(str(i), "{f}-books.csv".format(f=str(i)))
             print("{f} Completed".format(f=str(i)))
